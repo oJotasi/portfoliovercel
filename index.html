@@ -2,86 +2,151 @@
 <html lang="es">
 <head>
   <title>Opcion1</title>
+  <link rel="stylesheet" href="estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .columna-derecha {
-      color: white;
-      height: 100vh;
-      overflow-y: auto;
-      padding: 20px;
-      background-color:rgb(12, 9, 42);
-    }
-
-    .columna-izquierda {
-      height: 100vh;
-      background-color:rgb(12, 9, 42);
-      color: white;
-      
-    }
-
-    .seccion {
-      padding: 100px 0;
-      border-bottom: 1px solid  #c8c3c3;
-    }
-
-    .texto{
-      margin-top: 20vh;
-      margin-bottom: 20vh;
-      margin-left: 10vh;
-      margin-right: 10vh;
-    }
-
-    body{
-        font-family: 'Inter', sans-serif;
-    }
-
-    a.nav-link:hover {
-        text-decoration: underline;
-    }
-
-
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
+<style>
+  
+.columna-derecha {
+    color: white;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+    background-color:rgb(12, 9, 42);;
+    scroll-behavior: smooth;
+}
+
+.columna-izquierda {
+    height: 100vh;
+    background-color:rgb(12, 9, 42);;
+    color: white;      
+}
+
+.seccion {
+    padding: 100px 0;
+    border-bottom: 1px solid #4b4b4b;
+}
+
+.texto {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.redes {
+    height: 6vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.redes:hover {
+    text-decoration: dotted;
+    filter: brightness(1.5);  
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    color: #bdcdd1;
+}
+
+a.nav-link{
+    color: #007bff;
+    font-size: 3vh;
+}
+
+a.nav-link:hover {
+    text-decoration: underline;
+    color: #00bfff;
+    font-size: 4vh;
+}
+
+/*color: #4c6daf;
+/* Cambiar el color de las etiquetas */
+.form-label {
+    color: #f3f3f3; /* Un verde para las etiquetas */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Hacer las etiquetas negritas */
+    margin-bottom: 10px; /* Espaciado adicional debajo de las etiquetas */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+}
+
+</style>
 <div class="container-fluid">
   <div class="row">
     
-    <div class="col-3 columna-izquierda">
+    <div class="col-12 col-xxl-3 columna-izquierda">
         <div class="texto">
-            <h2 style="font-size: 4vh">José Andrade</h2>
+            <h2 style="font-size: 5vh">José Andrade</h2>
             <h3 style="font-size: 3vh">Analista en Sistemas</h3>
-        <br>
-         <nav class="nav flex-column">
-          <a class="nav-link" href="#seccion1">Inicio</a>
-          <a class="nav-link" href="#seccion2">Sobre Mi</a>
-          <a class="nav-link" href="#seccion3">Proyectos</a>
-          <a class="nav-link" href="#seccion4">Contacto</a>
-        </nav>
+          <br>
+          <nav class="nav flex-column">
+            <a class="nav-link active" href="#seccion1">Inicio</a>
+            <a class="nav-link" href="#seccion2">Sobre Mi</a>
+            <a class="nav-link" href="#seccion3">Proyectos</a>
+            <a class="nav-link" href="#seccion4">Contacto</a>
+          </nav>
+          <br><br>
+          <figure>
+            <a href=""><img src="Imagenes/instagram-167-svgrepo-com.svg" alt="Instagram" title="Instagram" class="redes"></a>
+            <a href="https://github.com/oJotasi"><img src="Imagenes/github-142-svgrepo-com.svg" alt="Github" title="Github" class="redes"></a>
+            <a href=""><img src="Imagenes/whatsapp-svgrepo-com.svg" alt="Whatsapp" title="Whatsapp" class="redes"></a>
+          </figure>
         </div>
     </div>
     
-    <div class="col-9 columna-derecha">
+    <div class="col-12 col-xxl-9 columna-derecha">
       <h2>Contenido con Scroll</h2>
       <p>Lorem ipsum dolor sit amet...</p>
       <p>Contenido deaaa</p>
       <div id="seccion1" class="seccion">
-          <h2>Inicio</h2>
-          <p>Pene</p>
+          <h2 class="text-primary">Inicio</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis architecto nulla, ea numquam sit quia quo perspiciatis ipsa porro quod?</p>
         </div>
         <div id="seccion2" class="seccion">
-          <h2>Sobre mi</h2>
+          <h2 class="text-primary">Sobre mi</h2>
           <p>Soy alto programador</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore sequi alias ad, rerum quis rem atque aliquid asperiores ex accusamus veniam quos fugiat voluptate officia voluptatem reprehenderit distinctio repellendus animi esse. Iusto harum minima consectetur non veritatis error, vel labore dignissimos accusamus, pariatur odit, eaque laborum earum fugiat distinctio laboriosam explicabo eius sunt dolores ea quidem dolorum iste illo. Exercitationem et rem cum error earum distinctio architecto saepe perferendis odit debitis eligendi dolorum modi autem praesentium voluptatibus recusandae possimus officia eos doloremque, omnis nulla itaque assumenda. Commodi animi doloremque, officia eveniet magni, adipisci vitae perspiciatis reiciendis placeat accusantium aliquam quod, omnis eos deserunt odit autem! Numquam tempore tenetur fugiat laudantium, accusantium commodi obcaecati unde nostrum, cumque labore veritatis officia id explicabo! Iste ratione, eos itaque saepe voluptas dicta. Velit perspiciatis nobis obcaecati, tempora deleniti quia labore. Non cum quibusdam nam repudiandae, sint autem minus quam tempora officia sunt accusamus saepe labore animi praesentium, doloremque natus facere quos numquam fugit similique reiciendis eaque dolor. Culpa explicabo ab tempora iste tenetur? Aperiam beatae odit laborum? Asperiores optio explicabo eveniet temporibus magni, recusandae alias voluptatibus molestias? Laborum beatae doloremque quia ea et minima est tempora inventore? Consequuntur perferendis deserunt quidem maxime rerum.</p>
         </div>
         <div id="seccion3" class="seccion">
-          <h2>Proyectos</h2>
+          <h2 class="text-primary">Proyectos</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eaque, id rem iste sequi, tenetur dolore nihil, aut deleniti ab doloribus? Pariatur voluptate laboriosam doloribus unde dicta ratione, animi perspiciatis, iure deleniti harum sunt distinctio nostrum tempora amet soluta voluptates quibusdam est, incidunt exercitationem molestias sed commodi autem. Iure illo, eum veniam expedita asperiores eveniet magni aperiam explicabo. Reiciendis necessitatibus quisquam minus provident voluptatem repellendus quos modi odio laboriosam. Aspernatur quaerat ab ut, architecto a odio illum facilis sint et consequuntur ex optio iure. Dolorum modi tempore vel placeat illum natus quae sint aut incidunt sed debitis eligendi quo sit recusandae laudantium, dicta impedit. Aut totam dolor sapiente id ab officiis ipsum nesciunt nisi, doloremque harum perspiciatis minus vel quas, deleniti delectus doloribus iste voluptatibus incidunt, possimus autem atque odit. Quod consequuntur doloribus modi accusamus architecto obcaecati laboriosam sapiente facere labore eius quis, similique consequatur ullam perferendis et ipsa expedita, unde, debitis veritatis. Amet ducimus nulla deleniti illo nobis a totam quae molestias, voluptatem expedita maxime voluptas placeat doloribus fugiat aut magnam commodi unde? Debitis ex ad veritatis nulla veniam facilis blanditiis modi. Debitis, ea velit? Aperiam aspernatur ut provident itaque a fugiat, corrupti consequuntur quas! Quam corrupti nobis explicabo?</p>
         </div>
         <div id="seccion4" class="seccion">
-          <h2>Contacto</h2>
-          <p>Mandame un mensajedae Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum culpa, impedit voluptates architecto unde nisi omnis rem, nemo quo quisquam quasi dolorum, et eaque quaerat excepturi repellat nihil? Numquam cumque autem soluta ducimus similique dolorem est sed facilis. Iure sit sunt placeat doloremque laboriosam recusandae aliquid, soluta consequatur. Ullam explicabo voluptatem at facere, obcaecati enim animi quasi repellendus expedita, cumque labore possimus accusantium maiores? Non rerum commodi voluptatibus provident quod sapiente voluptatum deserunt laboriosam itaque nesciunt optio, iure perspiciatis, qui hic? Eaque porro et nisi aliquam deserunt incidunt voluptatibus eos ex quos, fuga, voluptate asperiores perspiciatis nesciunt, esse magnam ducimus aliquid ipsam animi exercitationem ipsa. Voluptates labore unde mollitia. Dicta voluptate dolor placeat omnis nisi esse ipsam ea iste eius fuga porro repudiandae praesentium consequuntur, magni libero vel rem laudantium harum dolores beatae atque minima. Repellendus quisquam recusandae, ut dolor quis nesciunt rem quibusdam ducimus vero earum repellat voluptatibus odit excepturi ipsum, blanditiis doloremque sequi dolorum neque debitis ullam nostrum minus. Suscipit, quisquam nihil! Alias ipsam voluptate vitae quibusdam error ipsa, ex velit dolore tempora obcaecati amet libero dolorum tenetur facilis, cumque qui nisi, laboriosam itaque iusto consequuntur quasi quis enim quam? Amet quo deserunt tenetur non quisquam dicta numquam.</p>
+          <h2 class="text-primary">Contacto</h2>
+            <div class="container justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <h2 class="mt-5 mb-4 text-center">Envíame un Mensaje</h2>
+                        <br>
+                        <form action="" method="post">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="correo" class="form-label">Correo Electrónico</label>
+                                  <input type="email" class="form-control" id="correo" name="correo" required>
+                                </div>
+                            </div>
+                        
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
